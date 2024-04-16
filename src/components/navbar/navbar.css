@@ -1,0 +1,27 @@
+.search-form form {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.search-form input {
+  width: 100%;
+  padding: 1rem 0;
+}
+.search-form button {
+  position: absolute;
+  right: 0;
+  background-color: #e01212 !important;
+  border-radius: 3px 3px 3px 3px;
+  padding: 0px 40px;
+  color: #fff !important;
+  height: 80%;
+  margin: 5px 5px;
+  font-weight: bold;
+  border: none;
+  transition: 0.5s;
+}
+.search-form button:hover {
+  background-color: #333 !important;
+  color: #fff !important;
+  transition: 0.3s;
+}
