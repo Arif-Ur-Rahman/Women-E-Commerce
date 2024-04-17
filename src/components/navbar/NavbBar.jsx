@@ -21,25 +21,29 @@ const NavbBar = () => {
               </button>
             </form>
           </div>
-          <div className="col-md-3">
+          <div className="col-md-3 d-flex">
             <div className="shop-icon">
               <a href="/">
                 <IoMdNotifications />
               </a>
+              <span class="cp-count">0</span>
             </div>
             <div className="shop-icon">
               <a href="/">
                 <FaRegHeart />
               </a>
+              <span class="cp-count">0</span>
             </div>
             <div className="shop-icon">
               <a href="/">
                 <FaShopify />
               </a>
+              <span class="cp-count">0</span>
             </div>
           </div>
         </div>
       </div>
+      <hr />
     </nav>
   );
 };
