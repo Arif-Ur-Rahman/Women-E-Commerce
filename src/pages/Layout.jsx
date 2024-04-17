@@ -1,15 +1,24 @@
 import React from "react";
-import Header from "../components/header/Header";
-import Footer from "../components/footer/Footer";
-import NavbBar from "../components/navbar/NavbBar";
 
 const Layout = () => {
   return (
-    <>
-      <Header />
-      <NavbBar />
-      <Footer />
-    </>
+    <main className="first-section">
+      <div className="intro-section">
+        <ul>
+          <h1>Women Fitness</h1>
+          <li>
+            <a className="btn cm-btn" href="/dress-home">
+              Women Dress
+            </a>
+          </li>
+          <li>
+            <a className="btn cm-btn" href="/food-home">
+              Women Food
+            </a>
+          </li>
+        </ul>
+      </div>
+    </main>
   );
 };
 

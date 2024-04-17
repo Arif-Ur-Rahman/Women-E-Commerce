@@ -1,1 +1,29 @@
+/* layout css */
+.first-section {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+.intro-section {
+  display: grid;
+  place-items: center;
+  border: 1px solid red;
+  text-align: center;
+  width: 50vw;
+  height: 60vh;
+}
+.cm-btn {
+  padding: 1rem 1.5rem;
+  border-radius: 3px 3px 3px 3px;
+  margin: 5px 5px;
+  background-color: #e01212 !important;
+  color: #fff !important;
+  font-weight: bold;
+}
 
+.cm-btn:hover {
+  background-color: #333 !important;
+  color: #fff !important;
+  transition: 0.3s;
+}

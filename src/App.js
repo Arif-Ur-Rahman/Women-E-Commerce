@@ -6,9 +6,9 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-        </Route>
+        <Route path="/" element={<Layout />} />
+        <Route path="dress-home" element={<Home />} />
+        <Route path="food-home" element={<Home />} />
       </Routes>
     </BrowserRouter>
   );
