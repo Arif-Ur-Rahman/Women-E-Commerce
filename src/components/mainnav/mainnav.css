@@ -1,0 +1,15 @@
+.nav-items a {
+  color: black;
+  margin-right: 1rem;
+}
+.dropdown-menu {
+  width: 100vw;
+}
+.dropdown-menu .row li {
+  text-align: center;
+  padding: 1rem;
+}
+.hot-line svg {
+  font-size: 2.5rem;
+  color: #e01212;
+}

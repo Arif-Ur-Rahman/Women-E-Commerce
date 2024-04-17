@@ -1,11 +1,9 @@
 import React from "react";
-import Header from "../components/header/Header";
-import Navbar from "../components/navbar/NavbBar";
+import AllNavbar from "../components/mainnav/AllNavbar";
 const Home = () => {
   return (
     <>
-      <Header />
-      <Navbar />
+      <AllNavbar />
     </>
   );
 };
