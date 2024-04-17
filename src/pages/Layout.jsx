@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Layout = () => {
   return (
@@ -7,14 +8,14 @@ const Layout = () => {
         <ul>
           <h1>Women Fitness</h1>
           <li>
-            <a className="btn cm-btn" href="/dress-home">
+            <Link className="btn cm-btn" to="/dress-home">
               Women Dress
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="btn cm-btn" href="/food-home">
+            <Link className="btn cm-btn" to="/food-home">
               Women Food
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

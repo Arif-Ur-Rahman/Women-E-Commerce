@@ -1,7 +1,10 @@
 import React from "react";
 import { HiMenuAlt2 } from "react-icons/hi";
-import { PiDressBold } from "react-icons/pi";
+import { PiBaseballCapBold, PiDressBold, PiPantsFill } from "react-icons/pi";
+import { FaPersonDressBurst } from "react-icons/fa6";
+import { GiAmpleDress, GiSonicShoes } from "react-icons/gi";
 import "./categories.css";
+import { IoIosMore } from "react-icons/io";
 const Categories = () => {
   return (
     <nav className="categories-nav">
@@ -19,14 +22,38 @@ const Categories = () => {
         </li>
         <li>
           <a href="/">
-            <PiDressBold />
-            Women
+            <FaPersonDressBurst />
+            Children
           </a>
         </li>
         <li>
           <a href="/">
-            <PiDressBold />
-            Women
+            <GiAmpleDress />
+            Tops
+          </a>
+        </li>
+        <li>
+          <a href="/">
+            <PiPantsFill />
+            Bottoms
+          </a>
+        </li>
+        <li>
+          <a href="/">
+            <GiSonicShoes />
+            Shoes
+          </a>
+        </li>
+        <li>
+          <a href="/">
+            <PiBaseballCapBold />
+            Accessories
+          </a>
+        </li>
+        <li>
+          <a href="/">
+            <IoIosMore />
+            Others
           </a>
         </li>
       </ul>

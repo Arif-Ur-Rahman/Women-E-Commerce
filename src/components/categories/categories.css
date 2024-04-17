@@ -22,6 +22,7 @@
   line-height: 30px;
   display: block;
   z-index: 3;
+  padding: 1rem 1rem;
 }
 .categories-nav ul li a::after {
   content: "";
@@ -37,7 +38,7 @@
   background: #e2e2e2;
 }
 .categories-nav ul li a:hover {
-  padding-left: 5px;
+  padding-left: 2rem;
   border-color: transparent;
   color: #e01212;
   background-color: transparent !important;

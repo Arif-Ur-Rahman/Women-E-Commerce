@@ -2,7 +2,7 @@
   color: black;
   margin-right: 1rem;
 }
-.dropdown-menu {
+nav .dropdown-menu {
   width: 100vw;
 }
 .dropdown-menu .row li {
