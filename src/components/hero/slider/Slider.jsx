@@ -1,96 +1,64 @@
 import React from "react";
 import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa";
+import slide1 from "../../../assets/images/slider/img1.jpg";
+import slide2 from "../../../assets/images/slider/img2.jpg";
+import slide3 from "../../../assets/images/slider/img3.jpg";
 import "./slider.css";
 const Slider = () => {
+  const SliderData = [
+    {
+      images: slide1,
+      title: "MAGIC SLIDER",
+      categories: "Women",
+      description:
+        "Lorem ipsum dolor sit consectetur adipisicing elit. Deleni temporibus quis eum consequuntur voluptate quae doloribus distinctio. Possimus, sed recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, aut",
+      link: "/product",
+    },
+    {
+      images: slide2,
+      title: "MAGIC SLIDER",
+      categories: "NATURE",
+      description:
+        "Lorem ipsum dolor sit consectetur adipisicing elit. Deleni temporibus quis eum consequuntur voluptate quae doloribus distinctio. Possimus, sed recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, aut",
+      link: "/product",
+    },
+    {
+      images: slide3,
+      title: "MAGIC SLIDER",
+      categories: "NATURE",
+      description:
+        "Lorem ipsum dolor sit consectetur adipisicing elit. Deleni temporibus quis eum consequuntur voluptate quae doloribus distinctio. Possimus, sed recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, aut",
+      link: "/product",
+    },
+  ];
   return (
     <div className="slider">
       <div className="list">
-        <div className="item">
-          <img src="./image/img1.jpg" alt="" />
-
-          <div className="content">
-            <div className="title">MAGIC SLIDER</div>
-            <div className="type">FLOWER</div>
-            <div className="description">
-              Lorem ipsum dolor sit consectetur adipisicing elit. Deleniti
-              temporibus quis eum consequuntur voluptate quae doloribus
-              distinctio. Possimus, sed recusandae. Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Sequi, aut.
-            </div>
-            <div className="button">
-              <button>SEE MORE</button>
-            </div>
-          </div>
-        </div>
-
-        <div className="item">
-          <img src="./image/img2.jpg" alt="" />
-
-          <div className="content">
-            <div className="title">MAGIC SLIDER</div>
-            <div className="type">NATURE</div>
-            <div className="description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-              temporibus quis eum consequuntur voluptate quae doloribus
-              distinctio. Possimus, sed recusandae. Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Sequi, aut.
-            </div>
-            <div className="button">
-              <button>SEE MORE</button>
+        {SliderData.map((data, index) => (
+          <div key={index} className="item">
+            <img src={data.images} alt={data.categories} />
+            <div className="content">
+              <div className="title">{data.title}</div>
+              <div className="type">
+                <h5>{data.categories}</h5>
+              </div>
+              <div className="description">{data.description}</div>
+              <div className="button">
+                <button type="button" className="btn-submit">
+                  Buy Now
+                </button>
+              </div>
             </div>
           </div>
-        </div>
-
-        <div className="item">
-          <img src="./image/img4.jpg" alt="" />
-
-          <div className="content">
-            <div className="title">MAGIC SLIDER</div>
-            <div className="type">PLANT</div>
-            <div className="description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-              temporibus quis eum consequuntur voluptate quae doloribus
-              distinctio. Possimus, sed recusandae. Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Sequi, aut.
-            </div>
-            <div className="button">
-              <button>SEE MORE</button>
-            </div>
-          </div>
-        </div>
-
-        <div className="item">
-          <img src="./image/img3.jpg" alt="" />
-
-          <div className="content">
-            <div className="title">MAGIC SLIDER</div>
-            <div className="type">NATURE</div>
-            <div className="description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-              temporibus quis eum consequuntur voluptate quae doloribus
-              distinctio. Possimus, sed recusandae. Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Sequi, aut.
-            </div>
-            <div className="button">
-              <button>SEE MORE</button>
-            </div>
-          </div>
-        </div>
+        ))}
       </div>
 
       <div className="thumbnail">
-        <div className="item">
-          <img src="./image/img1.jpg" alt="" />
-        </div>
-        <div className="item">
-          <img src="./image/img2.jpg" alt="" />
-        </div>
-        <div className="item">
-          <img src="./image/img4.jpg" alt="" />
-        </div>
-        <div className="item">
-          <img src="./image/img3.jpg" alt="" />
-        </div>
+        {SliderData.map((data, index) => (
+          <div key={index} className="item">
+            <img src={data.images} alt={data.title} />
+          </div>
+        ))}
       </div>
 
       <div className="nextPrevArrows">

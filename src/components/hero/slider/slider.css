@@ -1,9 +1,7 @@
 /* slider section  */
 
 .slider {
-  height: 100vh;
-  margin-top: -50px;
-  width: 100vw;
+  height: 90vh;
   overflow: hidden;
   position: relative;
 }
@@ -20,52 +18,26 @@
 }
 .slider .list .item .content {
   position: absolute;
-  top: 20%;
+  top: 10%;
   width: 1140px;
   max-width: 80%;
   left: 50%;
   transform: translateX(-50%);
   padding-right: 30%;
   box-sizing: border-box;
-  color: #fff;
+  color: var(--primary-white);
   text-shadow: 0 5px 10px #0004;
 }
 
 .slider .list .item .content .title,
 .slider .list .item .content .type {
-  font-size: 5em;
+  font-size: 2em;
   font-weight: bold;
   line-height: 1.3em;
 }
 .slider .list .item .type {
-  color: #14ff72cb;
+  color: var(--primary-red);
 }
-.slider .list .item .button {
-  display: grid;
-  grid-template-columns: repeat(2, 130px);
-  grid-template-rows: 40px;
-  gap: 5px;
-  margin-top: 20px;
-}
-.slider .list .item .button button {
-  border: none;
-  background-color: #eee;
-  font-family: Poppins;
-  font-weight: 500;
-  cursor: pointer;
-  transition: 0.4s;
-  letter-spacing: 2px;
-}
-
-.slider .list .item .button button:hover {
-  letter-spacing: 3px;
-}
-.slider .list .item .button button:nth-child(2) {
-  background-color: transparent;
-  border: 1px solid #fff;
-  color: #eee;
-}
-
 /* Thumbnail Section  */
 .thumbnail {
   position: absolute;
@@ -108,17 +80,17 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #14ff72cb;
+  background-color: var(--primary-red);
   border: none;
-  color: #fff;
+  color: var(--primary-white);
   font-family: monospace;
   font-weight: bold;
   transition: 0.5s;
   cursor: pointer;
 }
 .nextPrevArrows button:hover {
-  background-color: #fff;
-  color: #000;
+  background-color: var(--primary-white);
+  color: var(--dark-deep);
 }
 
 /* Animation Part */
@@ -126,8 +98,7 @@
   z-index: 1;
 }
 
-/* animation text in first item */
-.slider .list .item:nth-child(1) .content .title,
+animation text in first item .slider .list .item:nth-child(1) .content .title,
 .slider .list .item:nth-child(1) .content .type,
 .slider .list .item:nth-child(1) .content .description,
 .slider .list .item:nth-child(1) .content .buttons {
