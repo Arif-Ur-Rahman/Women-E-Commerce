@@ -1,3 +1,12 @@
+:root {
+  --primary-color: #1e90ff;
+  --primary-red: #e01212;
+  --dark-deep: #333;
+  --secondary-color: #777777;
+  --primary-white: #fff;
+  --white: #f5f6f9;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -5,7 +14,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #f5f6f9;
+  background-color: var(--white);
 }
 
 code {
@@ -14,8 +23,25 @@ code {
 }
 a {
   text-decoration: none;
-  color: #777777;
+  color: var(--secondary-color);
 }
 ul li {
   list-style: none;
+}
+.btn-submit {
+  background-color: #e01212 !important;
+  border-radius: 3px 3px 3px 3px;
+  padding: 0.8rem 3rem;
+  color: #fff !important;
+  height: 80%;
+  margin: 5px 5px;
+  font-weight: bold;
+  border: none;
+  transition: 0.5s;
+}
+
+.btn-submit:hover {
+  background-color: #333 !important;
+  color: #fff !important;
+  transition: 0.3s;
 }
