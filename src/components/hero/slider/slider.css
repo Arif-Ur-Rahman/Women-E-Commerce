@@ -38,6 +38,10 @@
 .slider .list .item .type {
   color: var(--primary-red);
 }
+.slider .list .item .button button {
+  margin-top: 1.5rem;
+}
+
 /* Thumbnail Section  */
 .thumbnail {
   position: absolute;
