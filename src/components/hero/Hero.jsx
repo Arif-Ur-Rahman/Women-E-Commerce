@@ -1,6 +1,6 @@
 import React from "react";
 import Categories from "../categories/Categories";
-import slider from "../../assets/images/benner/banner-04.jpg";
+import Slider from "./slider/Slider";
 const Hero = () => {
   return (
     <main className="py-2">
@@ -10,7 +10,7 @@ const Hero = () => {
             <Categories />
           </div>
           <div className="col-md-8">
-            <img src={slider} className="image-fluid" alt="" />
+            <Slider />
           </div>
         </div>
       </div>
