@@ -11,7 +11,7 @@ const Slider = () => {
       title: "MAGIC SLIDER",
       categories: "Women",
       description:
-        "Lorem ipsum dolor sit consectetur adipisicing elit. Deleni temporibus quis eum consequuntur voluptate quae doloribus distinctio. Possimus, sed recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, aut",
+        "Lorem ipsum dolor sit consectetur  voluptate quae doloribus distinctio. Possimus, sed recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, aut",
       link: "/product",
     },
     {
