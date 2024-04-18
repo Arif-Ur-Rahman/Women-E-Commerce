@@ -5,6 +5,10 @@ import slide2 from "../../../assets/images/slider/img2.jpg";
 import slide3 from "../../../assets/images/slider/img3.jpg";
 import "./slider.css";
 const Slider = () => {
+  // const [currentSlide, setCurrentSlide] = useState(0);
+  // const nextSlide = () => {
+  //   setCurrentSlide(prevIndex);
+  // };
   const SliderData = [
     {
       images: slide1,
@@ -31,6 +35,7 @@ const Slider = () => {
       link: "/product",
     },
   ];
+  const nextSlide = () => {};
   return (
     <div className="slider">
       <div className="list">
@@ -66,7 +71,7 @@ const Slider = () => {
           {" "}
           <FaArrowAltCircleLeft />
         </button>
-        <button className="next">
+        <button onClick={nextSlide} className="next">
           {" "}
           <FaArrowAltCircleRight />
         </button>
