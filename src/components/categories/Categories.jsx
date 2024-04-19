@@ -8,8 +8,8 @@ import { IoIosMore } from "react-icons/io";
 const Categories = () => {
   return (
     <nav className="categories-nav">
-      <div class="categories-menu">
-        <h3 class="categories-menu-title px-3">
+      <div className="categories-menu">
+        <h3 className="categories-menu-title px-3">
           <HiMenuAlt2 /> Shop By Categories{" "}
         </h3>
       </div>

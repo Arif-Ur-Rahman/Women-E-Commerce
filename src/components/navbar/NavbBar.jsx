@@ -15,7 +15,7 @@ const NavbBar = () => {
           <div className="col-md-6 search-form">
             <form action="">
               <input type="text" placeholder="Search products..." />
-              <button type="submit" class="search-submit" value="">
+              <button type="submit" className="search-submit" value="">
                 {" "}
                 Search
               </button>
@@ -26,19 +26,19 @@ const NavbBar = () => {
               <a href="/">
                 <IoMdNotifications />
               </a>
-              <span class="cp-count">0</span>
+              <span className="cp-count">0</span>
             </div>
             <div className="shop-icon">
               <a href="/">
                 <FaRegHeart />
               </a>
-              <span class="cp-count">0</span>
+              <span className="cp-count">0</span>
             </div>
             <div className="shop-icon">
               <a href="/">
                 <FaShopify />
               </a>
-              <span class="cp-count">0</span>
+              <span className="cp-count">0</span>
             </div>
           </div>
         </div>
